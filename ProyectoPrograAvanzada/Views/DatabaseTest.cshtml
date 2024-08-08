@@ -1,0 +1,29 @@
+﻿@model IEnumerable<ProyectoPrograAvanzada.Models.Usuario>
+
+@{
+    ViewData["Title"] = "Database Test";
+}
+
+<h1>Database Test</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Usuario</th>
+            <th>Rol</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var usuario in Model)
+        {
+            <tr>
+                <td>@usuario.ID</td>
+                <td>@usuario.Nombre</td>
+                <td>@usuario.User</td>
+                <td>@usuario.Rol</td>
+            </tr>
+        }
+    </tbody>
+</table>
