@@ -1,0 +1,19 @@
+﻿@model ProgramacionAvanzada1.ViewModels.LoginViewModel
+
+<form asp-action="Login" method="post">
+    <div>
+        <label asp-for="UserName"></label>
+        <input asp-for="UserName" />
+        <span asp-validation-for="UserName"></span>
+    </div>
+    <div>
+        <label asp-for="Password"></label>
+        <input asp-for="Password" type="password" />
+        <span asp-validation-for="Password"></span>
+    </div>
+    <div>
+        <input asp-for="RememberMe" />
+        <label asp-for="RememberMe"></label>
+    </div>
+    <button type="submit">Log in</button>
+</form>
